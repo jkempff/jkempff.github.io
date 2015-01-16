@@ -4,12 +4,12 @@ layout: default
 
 <article class="article gray mw7 center phm pbl">
     <aside class="f5 cf mtm mbm mw7 center light-red">
-        <a href="/" class="link">&lt; home</a>
         <span class="fr">
             <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
         </span>
     </aside>
-    {{ content }}
+    <h2>{{ page.title }}</h2>
+    <main>{{ content }}</main>
 </article>
 
 <div class="bt b--light-gray">
