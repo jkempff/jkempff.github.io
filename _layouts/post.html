@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="article gray mw7 center phm pbl">
+    <aside class="f5 cf mtm mbm mw7 center light-red">
+        <a href="/" class="link">&lt; home</a>
+        <span class="fr">
+            <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
+        </span>
+    </aside>
+    {{ content }}
+</article>
+
+<div class="bt b--light-gray">
+    <nav class="mw7 center phm pvm cf">
+        {% if page.previous.url %} 
+            <a class="link fl" href="{{page.previous.url}}">&lt; {{page.previous.title}}</a> 
+        {% endif %} 
+        {% if page.next.url %} 
+            <a class="link fr" href="{{page.next.url}}">{{page.next.title}} &gt;</a> 
+        {% endif %} 
+    </nav>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
+    <meta name="viewport" content="width=device-width,user-scaleable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="{{site.baseurl}}/tachyons.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/shame.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/syntax.css">
+</head>
+
+<body class="wi-100">
+    <header class="bg-light-red dt h-20 wi-100 ptm pbm">
+        <h1 class="white tc h-100 v-mid dtc">{{ page.title }}</h1>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+
+    <footer class="bg-white gray pvx pvxl-ns bt b--light-gray h-30 f5 f4-ns">
+        <p class="mw7 db center phm lh-copy"><a class="link" href="/">Home</a> // 
+        <a class="link" href="mailto:me@ju.am">contact me</a> // 
+        Build with awesome <a href="http://tachyons.io/" class="link">tachyons</a><br>
+        &copy;&nbsp;2015 - Julian Kempff
+        </p>
+    </footer>
+
+</body>

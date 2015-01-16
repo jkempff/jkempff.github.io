@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JU</title>
-    <meta name="viewport" content="width=device-width,user-scaleable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="tachyons.css">
-</head>
-
-<body class="wi-100">
-    <div class="dt h-60">
-        <header class="bg-light-blue tc h-100 dtc wi-100 v-mid">
-            <h1 class="white">My name is <abbr title="Julian Kempff">Ju</abbr></h1>
-        </header>
-    </div>
-    <main>
-        <section class="bg-near-white dt h-100 gray pvx pvxl-ns">
-            <div class="dtc v-mid">
-                <div class="mw7 center phm tl tl-ns">
-                    <p class="f4 f2-ns pln lh-copy">I am a webdeveloper, based in munich, working at <a href="http://formundcode.de" class="link">Form &amp; Code</a>, who likes music.</p>
-                </div>
+---
+layout: default
+title: My name is Ju
+---
+<section class="bg-near-white dt h-100 gray pvl pvxl-ns f4 f3-ns">
+    <div class="dtc v-mid">
+        <div class="mw7 center phm tl tl-ns">
+            <div class="pln lh-copy">
+                <p>My full name is <em>Julian Kempff</em>, but &ndash; as stated above &ndash; everyone calls me Ju.</p>
+                <p>I am a webdeveloper, based in munich (germany), working at <a href="http://formundcode.de" class="link">Form &amp; Code</a>, who likes music.</p>
+                <p>Below you find may or may not find something interesting:</p>
             </div>
-        </section>
-    </main>
-    <footer class="bg-white gray pvx pvxl-ns bt b--light-gray h-30">
-        <p class="f4 mw7 db center phm lh-copy">Website in progress</p>
-        <p class="f5 mw7 db center phm lh-copy">Consider this a more beautiful <code>about:blank</code> page.<br>
-        Build with awesome <a href="http://tachyons.io/" class="link">tachyons</a>.</p>
-    </footer>
+        </div>
+    </div>
+</section>
+<nav class="f4 f3-ns">
+    <ul class="list man pan">
+    {% for post in paginator.posts %}
+        <li class="bt b--light-gray">
+            <a class="mw7 center phm ptl pbl db link" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,17 @@
+.article a {
+  text-decoration: none;
+  text-underline-position: under;
+  -webkit-transition: color 0.175s ease-in;
+  transition: color 0.175s ease-in; }
+
+.article a:link, .article a:visited {
+  color: #2D243B; }
+
+.article a:hover {
+  color: #999999; }
+
+.article a:active {
+  color: #C4E3E0; }
+
+.article a:focus {
+  color: #2D243B; }
