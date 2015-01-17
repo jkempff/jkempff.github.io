@@ -5,7 +5,7 @@ category: SASS
 
 ---
 
-A simple to use, easily customize and non-headache grid system.
+A simple to use, customizable and non-headache grid system.
 
 It follows the `.module__submodule--variation` class name definition and is therefore readable.
 
