@@ -12,13 +12,14 @@ layout: default
     <main>{{ content }}</main>
 </article>
 
-<div class="bt b--light-gray">
-    <nav class="mw7 center phm pvm cf">
+
+<nav class="bt b--light-gray">
+    <ul class="list mw7 center phm pvm cf mtn mbn">
         {% if page.previous.url %} 
-            <a class="link fl" href="{{page.previous.url}}">&lt; {{page.previous.title}}</a> 
+            <li class="fl"><a class="link" href="{{page.previous.url}}">&lt; {{page.previous.title}}</a></li>
         {% endif %} 
         {% if page.next.url %} 
-            <a class="link fr" href="{{page.next.url}}">{{page.next.title}} &gt;</a> 
+            <li class="fr"><a class="link" href="{{page.next.url}}">{{page.next.title}} &gt;</a></li>
         {% endif %} 
-    </nav>
-</div>
+    </ul>
+</nav>
