@@ -1,4 +1,6 @@
-name: "Julian Kempff"
+name: Ju Kempff
+description: "webstuff, music, things i like"
+url: http://ju.am
 highlighter: pygments
 paginate: 3
 permalink: /article/:title
