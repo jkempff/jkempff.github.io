@@ -23,7 +23,7 @@ What this means is, that it's possible to write something like this
 
     &--truck {
         &--extra-long {
-            &--trucker-seat {
+            &__trucker-seat {
                 &--leather {
                     cosy: 'very';
                 }
@@ -48,7 +48,7 @@ which will become this
     filter: blur(9px);
 }
 
-.vehicle.vehicle--truck.vehicle--truck--extra-long.vehicle--truck--extra-long--trucker-seat.vehicle--truck--extra-long--trucker-seat--leather {
+.vehicle.vehicle--truck.vehicle--truck--extra-long.vehicle--truck--extra-long__trucker-seat.vehicle--truck--extra-long__trucker-seat--leather {
     cosy: 'very';
 }
 {% endhighlight %}
