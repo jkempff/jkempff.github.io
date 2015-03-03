@@ -4,7 +4,7 @@ title: CSS Module Naming Convention and Sass
 category: SASS
 ---
 
-This is'nt news. But I have'nt heard of it until some days ago:
+This isn't news. But I haven't heard of it until some days ago:
 
 Since *Sass 3.3.0* "the parent selector, &, can be used with an identifier suffix"!  
 What this means is, that it's possible to write something like this
