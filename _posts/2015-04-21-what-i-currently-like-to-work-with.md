@@ -40,7 +40,7 @@ I am only using it for a prototype yet, but the setup was so simple, I think of 
 If you are about to build a webservice or a website without the need of a backend, that needs to be lightweight, you should give it a try:
 At DrupalCon Amsterdam 2014, Crell did a talk about how they used Silex in combination with ElasticSearch, to build a super fast RESTApi.
 
-Besides [many other goodies][silexgoodies] from symfony2, you get [Twig](twig) as a powerful templating engine.
+Besides [many other goodies][silexgoodies] from symfony2, you get [Twig][twig] as a powerful templating engine.
 
 The thing that got me into trying it out, was their hello world example:
 
