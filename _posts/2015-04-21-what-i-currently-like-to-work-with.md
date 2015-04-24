@@ -42,7 +42,7 @@ At DrupalCon Amsterdam 2014, Crell did a talk about how they used Silex in combi
 
 Besides [many other goodies][silexgoodies] from symfony2, you get [Twig][twig] as a powerful templating engine.
 
-The thing that got me into trying it out, was their hello world example:
+The thing that got me into testing it, was their hello world example:
 
 {% highlight php %}
 <?php
