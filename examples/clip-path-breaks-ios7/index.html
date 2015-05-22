@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clip path breaks ios7 demo</title>
+    <style type="text/css">
+        html,body {
+            margin: 0;
+            background: #efefef;
+        }
+        .demo {
+            margin: 0 auto;
+            padding: 2em 5em;
+            width: 70%;
+            height: 70%;
+            background: #FFF;
+            color: #212121;
+            font-size: 3em;
+            text-align: center;
+            box-sizing: border-box;
+            -webkit-animation-name: clippathanim;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes clippathanim {
+            0% {
+                -webkit-clip-path: polygon(0 100%, 100% 0, 0 0);
+            }
+
+            25% {
+                -webkit-clip-path: polygon(0 100%, 100% 100%, 0 0);
+            }
+
+            50% {
+                -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+            }
+
+            75% {
+                -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+            }
+
+            100% {
+                -webkit-clip-path: polygon(0 0, 0 100%, 100%, 0);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="demo">
+    This page will cause any iOS 7 browser to crash
+</div>
+</body>
+</html>
