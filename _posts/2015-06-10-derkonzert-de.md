@@ -18,7 +18,7 @@ No fun.
 
 ### the solution
 
-So I had the idea, to create a list of needles. Having many friends that share at least roughly the same music taste like I do - I will take a step forward and call it 'dont care for genres, just like it or not'. - they should be able to participate, and everyone automagically learns something.
+So I had the idea to create a list of needles, of only those events that I would go to.
 
 At the same time, I played around with [Reactjs][reactjs] and decided to make it my react test-project. It may not be the perfect playground, since there hardly are any user interactions or state changes, but who cares.
 
@@ -36,7 +36,7 @@ The project is separated into three parts:
 
 This is a light, silverstripe php framework instance, that spits out JSON formatted concerts and an rss feed (mainly used for mailchimp).
 
-One thing I learned here, the existing RESTFul modules all somehow didn't match my needs, whether it was inconsistent formatting, or their weird CRUD implenentations (which is *not* using silverstripes `PermissionProvider`..). So I wrote one tiny controller to accomplish all I needed. In no time, Silverstripe FTY. That said, it's *not a true RESTful service*.
+One thing I learned here, the existing RESTFul modules all somehow didn't match my needs, whether it was inconsistent formatting, or their weird CRUD implementations (which is *not* using silverstripes `PermissionProvider`..). So I wrote one tiny controller to accomplish all I needed. In no time, Silverstripe FTY. That said, it's *not a true RESTful service*.
 
 I also learned about Silverstripes `CliController` class which basically is just a usual `Controller`, but only can be called via the cli. Perfect for my cron jobs that e.g. trigger the YO API.
 
