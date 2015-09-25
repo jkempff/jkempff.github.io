@@ -2,5 +2,5 @@ name: Ju Kempff
 description: "webstuff, music, things i like"
 url: http://ju.am
 highlighter: pygments
-paginate: 3
+paginate: 50
 permalink: /article/:title
