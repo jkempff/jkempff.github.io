@@ -1,6 +1,7 @@
 name: Ju Kempff
 description: "webstuff, music, things i like"
 url: http://ju.am
+future: true
 paginate: 50
 paginate_path: "/page:num"
 permalink: /article/:title
