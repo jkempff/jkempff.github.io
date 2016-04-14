@@ -4,3 +4,5 @@ url: http://ju.am
 highlighter: pygments
 paginate: 50
 permalink: /article/:title
+gems:
+  - jekyll-paginate
