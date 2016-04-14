@@ -1,8 +1,8 @@
 name: Ju Kempff
 description: "webstuff, music, things i like"
 url: http://ju.am
-highlighter: pygments
 paginate: 50
 permalink: /article/:title
+safe: false
 gems:
   - jekyll-paginate
