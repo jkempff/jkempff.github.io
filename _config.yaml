@@ -3,6 +3,11 @@ description: "webstuff, music, things i like"
 url: http://ju.am
 future: true
 paginate: 51
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
 paginate_path: "/page:num"
 permalink: /article/:title
 safe: false

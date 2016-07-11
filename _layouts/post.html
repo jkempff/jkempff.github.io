@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="article gray mw7 center phm pbl">
+<article class="article mw7 center phm pbl">
     <aside class="f5 cf mtm mbm mw7 center light-red">
         <span class="fr">
             <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
@@ -15,11 +15,11 @@ layout: default
 
 <nav class="bt b--light-gray">
     <ul class="list mw7 center phm pvm cf mtn mbn">
-        {% if page.previous.url %} 
+        {% if page.previous.url %}
             <li class="fl"><a class="link" href="{{page.previous.url}}">&lt; {{page.previous.title}}</a></li>
-        {% endif %} 
-        {% if page.next.url %} 
+        {% endif %}
+        {% if page.next.url %}
             <li class="fr"><a class="link" href="{{page.next.url}}">{{page.next.title}} &gt;</a></li>
-        {% endif %} 
+        {% endif %}
     </ul>
 </nav>
