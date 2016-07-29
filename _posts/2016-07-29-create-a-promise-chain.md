@@ -8,7 +8,7 @@ Yo. It's been a while since my last post. And this is nothing special, but somet
 
 When working with promises, you sometimes need to wait for more than one promise to resolve. Most time `Promise.all` will solve this for you.
 
-```
+```js
 Promise.all(arrayOfPromises)
   .then(results => {})
   .catch(err => {}));
@@ -20,7 +20,7 @@ This works just fine, but there is one caveat: the promises in the array have al
 
 To fix this, you simply can use `Array.prototype.reduce`:
 
-```
+```js
 const reducePromises = fns => fns.reduce(
   (chain, link) => chain.then(
     result => new Promise(link(result))
@@ -30,7 +30,7 @@ const reducePromises = fns => fns.reduce(
 
 And use it as
 
-```
+```js
 // This array usually is somehow generated, otherwise
 // there'd be no need to use a reducer.
 const chain = [
@@ -57,7 +57,7 @@ Of course the example is pretty dumb, as you could just write it down as a norma
 
 For those of you that are not yet familiar with ES2015 style JS, here is the same reducer in good'ol ES5:
 
-```
+```js
 function reducePromises(chain) {
   return chain.reduce(function (chain, link) {
     return chain.then(function (result) {
