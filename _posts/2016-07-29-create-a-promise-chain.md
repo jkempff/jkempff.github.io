@@ -6,7 +6,7 @@ category: javascript,promises,es2015
 
 Yo. It's been a while since my last post. And this is nothing special, but something I quite often use and find very useful.
 
-When working with promises, you sometimes need to wait for more than one promise to resolve. Most time `Promise.all` will solve this for you.
+When working with promises, you sometimes need to wait for more than one promise to resolve. Most time [Promise.all][promise.all] will solve this for you.
 
 ```js
 Promise.all(arrayOfPromises)
@@ -14,7 +14,7 @@ Promise.all(arrayOfPromises)
   .catch(err => {}));
 ```
 
-This works just fine, but there is one caveat: the promises in the array have already been created and are all doing there stuff already. So, if you have a chain of functions, and *rely on results from a previous promise*, you can't use `Promise.all`.
+This works just fine, but there is one caveat: the promises in the array have been created and are all doing there stuff already. So, if you have a chain of functions, and *rely on results from a previous promise*, you can't use `Promise.all`.
 
 ## Reduce that promise
 
@@ -77,3 +77,5 @@ var chain = [
 ```
 
 And that's it. Promises ftw.
+
+[promise.all]: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
