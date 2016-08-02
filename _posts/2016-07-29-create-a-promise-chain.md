@@ -58,8 +58,8 @@ Of course the example is pretty dumb, as you could just write it down as a norma
 For those of you that are not yet familiar with ES2015 style JS, here is the same reducer in good'ol ES5:
 
 ```js
-function reducePromises(chain) {
-  return chain.reduce(function (chain, link) {
+function reducePromises(fns) {
+  return fns.reduce(function (chain, link) {
     return chain.then(function (result) {
       return new Promise(link(result));
     });
@@ -74,6 +74,8 @@ var chain = [
   },
   ..
 ];
+
+reducePromises(chain).then(..).catch(..);
 ```
 
 And that's it. Promises ftw.
