@@ -14,7 +14,7 @@ Promise.all(arrayOfPromises)
   .catch(err => {}));
 ```
 
-This works just fine, but there is one caveat: the promises in the array have been created and are all doing there stuff already. So, if you have a chain of functions, and *rely on results from a previous promise*, you can't use `Promise.all`.
+This works just fine, but there is one caveat: the promises in the array already have been created and are doing their stuff. But, if you have a chain of functions, and *rely on results from previous promise*, you can't use `Promise.all`.
 
 ## Reduce that promise
 
