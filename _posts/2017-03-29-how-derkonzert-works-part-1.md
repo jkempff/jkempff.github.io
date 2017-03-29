@@ -67,7 +67,7 @@ class ConcertListItem extends React.Component {
     render() {
         return (
             <li>
-                <a href={ concert.url }>
+                <a href={ this.props.concert.url }>
                     { this.props.concert.band }
                     submitted by { this.props.concert.author.username }
                 </a>
@@ -77,9 +77,9 @@ class ConcertListItem extends React.Component {
 }
 ```
 
-While you are building this component, you know exactly, what kind of properties this component requires: the `url`, the `band` and the authors `username` of the concert.
+While creating this component, you know exactly, what kind of properties you'll need, to actually render it: the `url`, the `band` and the authors `username` of the concert.
 
-With Relay, I can now create a wrapper component, that creates the required GraphQl query:
+With Relay, you are now able to build a wrapper component, that creates the required GraphQl query:
 
 ```
 Relay.createContainer(ConcertListItem, {
@@ -109,7 +109,7 @@ fragment on Concert {
 }
 ```
 
-This part will result in a GraphQL request to your endpoint, which then will "fill-out" the blanks and return:
+This part will result in a GraphQL request to your endpoint, which then will "fill-out" the blanks and return your desired data:
 
 ```
 {
@@ -122,7 +122,7 @@ This part will result in a GraphQL request to your endpoint, which then will "fi
 ```
 
 This is awesome!  
-I won't go more into detail, but what really makes this great, is to have your UI components being bind to your data. Composition gets super easy with this.
+I won't go more into detail, but what really makes this great, is to have your **UI components being bound to your data**. Composition gets super easy with this.
 
 ### Additional standalone services
 
