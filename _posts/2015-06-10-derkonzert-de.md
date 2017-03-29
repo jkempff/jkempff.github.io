@@ -4,6 +4,8 @@ title: Creating derkonzert.de
 category: frontend
 ---
 
+> This article refers to an older version of derkonzert.de, check out [this article instead](http://ju.am/article/how-derkonzert-works-part-1), to learn about the current version.
+
 ## "Scheiße, die spielen heute?"
 
 ..translates to: "Damn it, that band's concert is today?". This happens way too often.
