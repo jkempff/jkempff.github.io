@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How derkonzert.de works - part 1"
+title: How derkonzert.de works - part 1
 category: javascript,mongodb,redis,docker,graphql
 ---
 
