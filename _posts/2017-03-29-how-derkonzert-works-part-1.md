@@ -111,12 +111,12 @@ fragment on Concert {
 
 This part will result in a GraphQL request to your endpoint, which then will "fill-out" the blanks and return your desired data:
 
-```
+```json
 {
-    band: 'The bands name',
-    url: '/the-concerts-url-slug',
-    author: {
-        username: 'the authors username'
+    "band": "The bands name",
+    "url": "/the-concerts-url-slug",
+    "author": {
+        "username": "the authors username"
     }
 }
 ```
